@@ -5,6 +5,14 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
+import { ListarclientesPage } from '../pages/listarclientes/listarclientes';
+import { ListarproductosPage } from '../pages/listarproductos/listarproductos';
+import { AgregarventaPage } from '../pages/agregarventa/agregarventa';
+import { DetalleventaPage } from '../pages/detalleventa/detalleventa';
+import { AgregarclientePage } from '../pages/agregarcliente/agregarcliente';
+import { DetalleclientePage } from '../pages/detallecliente/detallecliente';
+import { AgregarproductoPage } from '../pages/agregarproducto/agregarproducto';
+import { DetalleproductoPage } from '../pages/detalleproducto/detalleproducto';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -13,7 +21,15 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   declarations: [
     MyApp,
     HomePage,
-    ListPage
+    ListPage,
+    AgregarventaPage,
+    DetalleventaPage,
+    AgregarclientePage,
+    DetalleclientePage,
+    ListarclientesPage,
+    ListarproductosPage,
+    AgregarproductoPage,
+    DetalleproductoPage
   ],
   imports: [
     BrowserModule,
@@ -23,7 +39,15 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   entryComponents: [
     MyApp,
     HomePage,
-    ListPage
+    ListPage,
+    AgregarventaPage,
+    DetalleventaPage,
+    AgregarclientePage,
+    DetalleclientePage,
+    ListarclientesPage,
+    ListarproductosPage,
+    AgregarproductoPage,
+    DetalleproductoPage
   ],
   providers: [
     StatusBar,

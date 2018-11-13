@@ -2,14 +2,14 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { ActionSheetController } from 'ionic-angular';
 import { AlertController } from 'ionic-angular';
-import { AgregarventaPage } from '../../pages/agregarventa/agregarventa';
-import { DetalleventaPage } from '../../pages/detalleventa/detalleventa';
+import { AgregarproductoPage } from '../../pages/agregarproducto/agregarproducto';
+import { DetalleproductoPage } from '../../pages/detalleproducto/detalleproducto';
 
 @Component({
-  selector: 'page-home',
-  templateUrl: 'home.html'
+  selector: 'page-listarproductos',
+  templateUrl: 'listarproductos.html',
 })
-export class HomePage {
+export class ListarproductosPage {
 
   constructor(public navCtrl: NavController, 
     public actionSheetCtrl: ActionSheetController, 
@@ -18,7 +18,7 @@ export class HomePage {
   }
 
   AgregarVenta(){
-    this.navCtrl.push(AgregarventaPage);
+    this.navCtrl.push(AgregarproductoPage);
   }
 
   mostrarConfirmacion() {
@@ -60,7 +60,7 @@ export class HomePage {
           icon: 'md-create',
           handler: () => {
             console.log('Archive clicked');
-            this.navCtrl.push(DetalleventaPage);
+            this.navCtrl.push(DetalleproductoPage);
           }
         },{
           text: 'Cancel',
@@ -75,3 +75,4 @@ export class HomePage {
     actionSheet.present();
   }
 }
+
