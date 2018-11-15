@@ -4,6 +4,8 @@ import { ActionSheetController } from 'ionic-angular';
 import { AlertController } from 'ionic-angular';
 import { AgregarventaPage } from '../../pages/agregarventa/agregarventa';
 import { DetalleventaPage } from '../../pages/detalleventa/detalleventa';
+import { LoginPage } from '../login/login';
+import { ModalController } from 'ionic-angular';
 
 @Component({
   selector: 'page-home',
@@ -13,11 +15,17 @@ export class HomePage {
 
   constructor(public navCtrl: NavController, 
     public actionSheetCtrl: ActionSheetController, 
-    public alertCtrl: AlertController) { 
+    public alertCtrl: AlertController,
+    public modalCtrl: ModalController) { 
 
   }
 
-  AgregarVenta(){
+  ionViewDidLoad(){
+    const modal = this.modalCtrl.create(LoginPage);
+    modal.present();
+  }
+
+  Agregar(){
     this.navCtrl.push(AgregarventaPage);
   }
 

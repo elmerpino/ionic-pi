@@ -17,7 +17,7 @@ export class ListarproductosPage {
 
   }
 
-  AgregarVenta(){
+  Agregar(){
     this.navCtrl.push(AgregarproductoPage);
   }
 

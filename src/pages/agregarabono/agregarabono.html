@@ -6,13 +6,28 @@
 -->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>agregarabono</ion-title>
+  <ion-navbar color="primary">
+    <ion-title>Agregar abono</ion-title>
+    <ion-buttons end>
+        <button ion-button icon-only>
+          <ion-icon name="checkbox-outline"></ion-icon>
+        </button>
+      </ion-buttons>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
-
+  <form> 
+    <ion-list>
+      <ion-item>
+        <button ion-button full  color="secondary">Seleccionar venta</button>
+      </ion-item>
+      <ion-item>
+        <ion-label floating>Cantidad de abono</ion-label>
+        <ion-input type="text" name="abono.cantidad"></ion-input>
+      </ion-item>
+    </ion-list>
+  </form>
 </ion-content>
